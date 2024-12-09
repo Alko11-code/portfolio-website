@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-name">AP</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio-gallery">
+            <h1>My Projects</h1>
+            <div class="gallery">
+                <div class="item" onclick="showProjectDetail('Project 1')">
+                    <img src="assests/Img5.jpeg.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                </div>
+                <div class="item" onclick="showProjectDetail('Project 2')">
+                    <img src="./assests/Img9.jpeg" alt="Project 2">
+                    <h3>Project 2</h3>
+                </div>
+                <div class="item" onclick="showProjectDetail('Project 3')">
+                    <img src="assests/Img10.jpeg" alt="Project 3">
+                    <h3>Project 3</h3>
+                </div>
+                <div class="item" onclick="showProjectDetail('Project 4')">
+                    <img src="./assests/Img11.jpeg" alt="Project 4">
+                    <h3>Project 4</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
+  
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="projectTitle">Project Detail</h2>
+            <div id="projectDetailsContainer">
+                <div id="projectImages" class="image-slider">
+                   Open Project Details
+                </div>
+                <p id="projectDetailText">Details will be shown here.</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+   <footer class="foo1">
+        <p>&copy; 2024 Your Name. All rights reserved. | Follow me on 
+            <a href="#" style="color: #ff6347;">LinkedIn</a> & 
+            <a href="#" style="color: #ff6347;">GitHub</a>
+        </p>
+    </footer>
+</body>
+</html>
